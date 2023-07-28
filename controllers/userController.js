@@ -83,11 +83,11 @@ module.exports = {
 
             if (!thought) {
                 return res.status(404).json({
-                    message: 'Student deleted, but no thoughts found',
+                    message: 'User deleted, but no thoughts found',
                 });
             }
 
-            res.json({ message: 'Student successfully deleted' });
+            res.json({ message: 'User successfully deleted' });
         } catch (err) {
             console.log(err);
             res.status(500).json(err);
